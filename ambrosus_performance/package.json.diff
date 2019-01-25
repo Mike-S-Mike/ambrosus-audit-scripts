@@ -1,0 +1,22 @@
+diff --git a/package.json b/package.json
+index f020322..79288e6 100644
+--- a/package.json
++++ b/package.json
+@@ -23,7 +23,9 @@
+     "test:all": "yarn build:sol && yarn test:units && yarn test:tasks",
+     "dev:lint": "eslint src test config && solium -d contracts/",
+     "dev:lint:fix": "eslint src test config --fix && solium -d contracts/ --fix",
+-    "task": "babel-node src/tasks/run.js"
++    "task": "babel-node src/tasks/run.js",
++    "test:spam": ". ./test_performance/performance.env && babel-node test_performance/spam.js",
++    "test:performance": ". ./test_performance/performance.env && babel-node test_performance/performance.js" 
+   },
+   "engines": {
+     "node": ">=9.0",
+@@ -59,4 +61,4 @@
+     "solium": "^1.1.7",
+     "truffle": "4.1.9"
+   }
+-}
++}
+\ No newline at end of file

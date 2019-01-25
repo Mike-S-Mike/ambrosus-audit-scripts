@@ -1,0 +1,16 @@
+---
+version: '2.4'
+services:
+  parity:
+    image: parity/parity:v2.0.8
+    entrypoint: /home/parity/bin/parity
+    command: --config /app/parity_config.toml --unsafe-expose --geth
+    working_dir: /app
+    user: root
+    restart: unless-stopped
+    ports:
+      - '8545:8545'
+      - '8546:8546'
+      - '30303:30303'
+    volumes:
+      - ./:/app/

@@ -1,0 +1,46 @@
+[parity]
+keys_path = "/app/keys"
+chain = "/app/chain.json"
+auto_update = "none"
+
+[network]
+discovery = false
+min_peers = 0
+
+[rpc]
+cors = ["all"]
+apis = ["eth","net","private","parity","personal"] 
+interface = "all"
+
+[ui]
+disable = true
+
+[account]
+unlock = ["0xeBfD1a5391130d58282a2943681aA549cf2B6035",
+"0x4a811ddd4f80f72b264b5870fed3695f1fab42e1",
+"0x7364cC62a970C8DC4468d2C06B69dB9cbbB54bcD",
+"0xbbC724eEE0B65a97D7A44222c0ea39d73F502Fb4",
+"0x70f846303C7534d36b30e9532C09138FA5FBF3Ac",
+"0xBdce9d6D1FE51Cfa9D5138950608291CA7bE0423",
+"0x0fC2F0af9EC171036DD07A247EddfcE983e90901",
+"0xCE237c8152EFB8EF1652D943D0c66A430276F615",
+"0x4038D318E29a3e0bD58c980827f2288794B9d3bc",
+"0x7e8d38cB56B399Cb67b8363FF89E21A35751C9aF",
+"0x7A17A14567cbC75D0025083eCDF6bAc378E4b8FF",
+"0x54e2CaDB66a52A52AB80281c0e455F02684B5A2F",
+"0x4E6D4933f2077c4433AED9A7bf591D9d6B3D8524",
+"0x5C012b30F3b69c8f249fB77f53423E9734f84FE7",
+"0x4C37F48Ab72DDd16393213be8f7b32B56F54A44f",
+"0xdD3f02212130F5359C39A6A83F25b1925Df77451"
+]
+password = ["/app/password.pwds"]
+
+
+[mining]
+engine_signer = "0xeBfD1a5391130d58282a2943681aA549cf2B6035"
+author = "0xeBfD1a5391130d58282a2943681aA549cf2B6035"
+reseal_on_txs = "none"
+force_sealing = true
+
+[misc]
+logging = "own_tx=trace"
